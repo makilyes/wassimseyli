@@ -1,0 +1,67 @@
+.summary-div {
+
+  width: 400px;
+  border: solid 2px #ffd629;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 21px;
+    font-weight: 900;
+    height: 40px;
+    background-color: #ffd629;
+    padding: 5px 20px;
+  }
+
+  .summary-jobs {
+    padding: 15px;
+
+    .job-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-bottom: #bebfc1 1px solid;
+      padding-bottom: 10px;
+
+      .job-title {
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      .job-price {
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .estimated-time {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.summary-total {
+  margin-top: 25px;
+  background-color: #ffd629;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.yourJobSummary-title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+
+.total-summaryDiv {
+  position: sticky;
+  top: 0;
+
+}

@@ -1,0 +1,18 @@
+.buttonAddStudent {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #ffd629;
+  color: black;
+  border: solid 1px #ffd629;
+
+  &.hidden {
+    display: none;
+  }
+
+  &:hover {
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+
+  }
+}

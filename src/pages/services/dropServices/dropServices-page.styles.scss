@@ -1,0 +1,52 @@
+.dropServices-cards {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  position: relative;
+
+  .column-1 {
+    width: 500px;
+  }
+
+  .column-2 {
+    width: 500px;
+    margin-top: 400px;
+    margin-left: 75px;
+  }
+}
+
+.imgDiv-DropServices-section2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  .img-DropServices-section2 {
+    height: 800px;
+
+  }
+}
+
+.dropServices-section3 {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  background-color: #150C21;
+  color: white;
+
+  .dropServices-section3-text {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .btn {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+.titleHowItWorks {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -1,0 +1,84 @@
+.dropServicesCard {
+  position: relative;
+  margin-bottom: 300px;
+  background-color: #ffffff;
+  padding: 45px;
+  -webkit-box-shadow: 8px 4px 75px -17px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 8px 4px 75px -17px rgba(0, 0, 0, 0.41);
+  box-shadow: 8px 4px 75px -17px rgba(0, 0, 0, 0.41);
+  min-height: 625px;
+
+  img {
+    width: 150px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+  }
+
+  .small-number {
+    font-size: 21px;
+    font-weight: 800;
+  }
+
+  .title-dropshipServices {
+    font-size: 42px;
+    line-height: 1.3;
+    width: 300px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    &.color0 {
+      color: #FF6651;
+    }
+
+    &.color1 {
+      color: #253343;
+    }
+
+    &.color2 {
+      color: #8B79D0;
+    }
+
+    &.color3 {
+      color: #01CB76;
+    }
+
+    &.module1 {
+      color: #FFBE41;
+    }
+
+    &.module2 {
+      color: #ED6546;
+    }
+
+    &.module3 {
+      color: #B1CA7D;
+    }
+
+    &.module4 {
+      color: #E2015A;
+    }
+
+    &.module5 {
+      color: #0153BC;
+    }
+
+    &.module6 {
+      color: #FFCE01;
+    }
+    &.module7 {
+      color: #109C58;
+    }
+    &.module8 {
+      color: #e547ca;
+    }
+    &.module9 {
+      color: #F5687C;
+    }
+  }
+  .text-dropshipServices{
+    line-height: 1.8;
+    text-align: justify;
+  }
+}

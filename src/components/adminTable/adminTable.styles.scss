@@ -1,0 +1,53 @@
+.buttonAdminResults {
+  margin-right: 10px;
+  background-color: white;
+  color: #150C21;
+  border: solid 1px black;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #ffd629;
+    border: solid 1px #ffd629;
+    color: #150C21;
+  }
+  &:focus {
+    background-color: #ffd629;
+    border: solid 1px #ffd629;
+    color: #150C21;
+  }
+}
+
+.hidden{
+  display :none
+}
+
+
+.center-results {
+
+//text-align: center;
+  margin: 0 auto;
+
+
+  .filter {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+
+    .datePickerAdmin {
+
+
+    }
+  }
+}
+
+.numberResultsSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  .col-background {
+    background-color: white;
+    padding: 20px;
+  }
+}
+

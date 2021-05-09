@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  align-items: center;
+  background-color: #ffd629;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover {
+    color: white;
+  }
+
+}
+
+.purple-shadow {
+  background-color: #ffd629;
+  box-shadow: 0 10px 26px -6px rgba(9, 8, 8, 0.65);
+  -webkit-transition: background-color 400ms ease, color 200ms ease, box-shadow 400ms ease, -webkit-transform 400ms ease;
+  transition: background-color 400ms ease, color 200ms ease, box-shadow 400ms ease, -webkit-transform 400ms ease;
+  transition: background-color 400ms ease, color 200ms ease, transform 400ms ease, box-shadow 400ms ease;
+  transition: background-color 400ms ease, color 200ms ease, transform 400ms ease, box-shadow 400ms ease, -webkit-transform 400ms ease;
+}
+
+.purple-shadow:hover {
+  box-shadow: none;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}

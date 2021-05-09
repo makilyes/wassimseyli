@@ -1,0 +1,88 @@
+.offers-component {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 95%;
+
+  .col-1 {
+
+    .chooseYourProject {
+      // bloc titre + cards
+
+      &.visible-desktop {
+        @media (max-width: 1105px) {
+          flex-basis: 65%;
+          display: none;
+        }
+      }
+
+      &.visible-phone {
+        @media (min-width: 1105px) {
+          width: 100%;
+          display: none;
+
+        }
+      }
+    }
+
+    .btn {
+      padding: 10px 30px;
+      font-size: 20px;
+      border-radius: 25px;
+      margin-bottom: 20px;
+    }
+    .btnAndPaymentLogo {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 100px;
+    }
+  }
+
+  .col-2 {
+    margin-left: 20px;
+    flex-basis: 25%;
+  }
+
+}
+
+@media screen and (max-width: 1460px) {
+  .offers-component {
+    display: block;
+    text-align: center;
+
+    .col-1 {
+      .btn {
+        padding: 10px 30px;
+        font-size: 20px;
+        border-radius: 25px;
+        margin-bottom: 50px;
+      }
+      .btnAndPaymentLogo {
+        display: block;
+        justify-content: space-around;
+        margin-bottom: 100px;
+      }
+    }
+
+
+    .col-2 {
+
+      margin-top: 70px;
+      margin-left: 0;
+
+      .yourJobSummary-title {
+        text-align: center;
+      }
+
+      .summary-div {
+        width: 100%;
+      }
+
+      .summary-total {
+        width: 100%;
+      }
+    }
+  }
+
+
+}

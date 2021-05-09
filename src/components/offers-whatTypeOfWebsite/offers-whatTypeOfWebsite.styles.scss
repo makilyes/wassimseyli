@@ -1,0 +1,87 @@
+.typeOfWebsite-component {
+  display: flex;
+  width: 80%;
+
+
+  .listing-active {
+    background-color: #ffd629;
+    list-style: none;
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+
+    .title-checkbox {
+      margin: 0 auto;
+      //margin-top: 20px;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .fa-check {
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid black;
+    }
+
+    .subtitle-project {
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+
+  }
+
+  .listing {
+    background-color: white;
+    list-style: none;
+    border: #ffd629 1px solid;
+    width: 33%;
+
+
+
+    .title-checkbox {
+      margin: 0 auto;
+      //margin-top: 20px;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .fa-check {
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      width: 35px;
+      height: 35px;
+      border: 1px solid #b7b7b7;
+    }
+
+    .subtitle-project {
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+  }
+}
+
+
+.title-chooseYourProject {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .step-number {
+    font-weight: 900;
+    background-color: #ffd629;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+
+  }
+}

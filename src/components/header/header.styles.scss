@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffd629;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+    &:hover {
+      transform: scale(1.2,1.2);
+    }
+  }
+
+  .options {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: red;
+
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+      margin-right: 10px;
+      &:hover {
+        background-color: transparent;
+        color: black;
+        font-weight: 900;
+        border-bottom: solid 1px black;
+      }
+      &.signIn {
+        background-color: #045CA4;
+        color: white;
+        border-radius: 5px;
+      }
+      //background-color: pink;
+    }
+  }
+}

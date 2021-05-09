@@ -1,0 +1,22 @@
+.accepted-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 17px;
+
+  .boldSpan {
+    font-weight: 600;
+  }
+  img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .accepted-payment {
+    display: block;
+    .boldSpan {
+      display: block;
+    }
+  }
+}

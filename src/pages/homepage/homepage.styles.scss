@@ -1,0 +1,369 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30PX, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30PX, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes enterLeft {
+  0% {
+    transform: translateX(100%);
+
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateX(0);
+    transform-style: preserve-3d;
+    opacity: 1;
+  }
+}
+
+@keyframes enterRight {
+  0% {
+    transform: translateX(-100%) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateX(0);
+    transform-style: preserve-3d;
+    opacity: 1;
+  }
+}
+
+.left-column-text {
+  //background: aqua;
+  text-align: center;
+
+  &.descriptionLeft {
+    animation: enterRight ease 1s;
+
+  }
+
+  &.descriptionRight {
+    animation: enterLeft ease 1s;
+  }
+
+  h2 {
+    color: #3e4348;
+  }
+
+  p {
+    color: #7f8893;
+  }
+
+  .title-mission-homepage {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    margin-top: 25px;
+    padding: 20px;
+  }
+}
+
+.hero-container {
+  text-align: center;
+  position: relative;
+  background-color: #e6e9ef;
+  width: 95%;
+  margin: 100px auto 400px;
+  height: 800px;
+
+  .hero-text-div {
+    width: 45%;
+    margin: 0 auto;
+    animation: fadeIn ease 4s;
+
+    .hero-title {
+      font-weight: 800;
+      font-size: 56px;
+      color: #3e4348;
+      padding-top: 150px;
+      margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+      margin-bottom: 10px;
+      color: #3e4348;
+    }
+
+    .btn {
+      padding: 20px;
+      margin: 20px 0 40px;
+    }
+
+  }
+
+  .hero-img-div {
+    position: absolute;
+    margin-bottom: -100px;
+    height: 500px;
+    left: 0;
+    right: 0;
+
+    .hero-image {
+      height: 100%;
+      object-fit: cover;
+      animation: zoomIn ease 2s;
+
+    }
+  }
+}
+
+.missionDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  //background: #ffd629;
+  width: 100%;
+  margin: 150px auto;
+
+  .textMissionDiv {
+
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .imgMissionDiv {
+    width: 50%;
+  }
+
+  .left-column-text {
+    width: 30%;
+  }
+
+}
+
+.imgDiv {
+  height: 400px;
+
+  &.leftImgAnimation {
+    animation: enterLeft ease 1s;
+  }
+
+  &.rightImgAnimation {
+    animation: enterRight ease 1s;
+    display: block;
+
+  }
+
+  &.rightImgAnimationMobile {
+    animation: enterRight ease 1s;
+    display: none;
+  }
+
+  .imageMission {
+    //background: blueviolet;
+    height: 100%;
+    object-fit: cover;
+    &.wassimProfil {
+      width: 220px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    width: 100%;
+    margin: 0px auto 500px;
+    height: 800px;
+
+
+    .hero-text-div {
+      width: 75%;
+      margin: 0 auto;
+      animation: fadeIn ease 4s;
+
+
+
+      .hero-subtitle {
+        margin-top: 30px;
+        color: #3e4348;
+        font-size: 30px;
+      }
+
+      .btn {
+        padding: 20px;
+        margin: 50px 0 70px;
+        font-size: 20px;
+      }
+    }
+
+    .hero-img-div {
+      position: absolute;
+      bottom: -200px;
+      height: 450px;
+
+    }
+  }
+
+
+  .missionDiv {
+
+    margin: 0 auto 150px;
+
+    .imgDiv {
+      height: 300px;
+
+      &.leftImgAnimation {
+        text-align: center;
+      }
+
+      &.rightImgAnimation {
+        display: block;
+
+      }
+
+      &.rightImgAnimationMobile {
+        display: none;
+        text-align: center;
+      }
+
+      .imageMission {
+        //background: blueviolet;
+        height: 100%;
+        object-fit: cover;
+
+        &.design {
+          height: 65%;
+        }
+
+        &.dropship {
+          height: 65%;
+        }
+
+      }
+    }
+
+    .title-mission-homepage {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+ .homePage-container {
+   margin: 0 auto;
+   text-align: center;
+  .hero-container { //banner
+    width: 100%;
+    margin: 0 auto 200px;
+    height: 600px;
+    text-align: center;
+    .hero-text-div {
+      width: 80%;
+      margin: 0 auto;
+      animation: fadeIn ease 4s;
+      .hero-title {
+        font-size: 35px;
+        padding-top: 60px;
+      }
+      .hero-subtitle {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        padding: 20px;
+        margin: 20px 0 40px;
+      }
+    }
+    .hero-img-div {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      bottom: -10px;
+    }
+  }
+
+  .missionDiv {
+    display: block;
+    margin: 0 auto;    
+    .left-column-text { // h2 + p + btn
+      width: 90%;
+      margin: 0 auto;
+      button {
+          margin: 10px 0 100px 0;
+      }
+    }
+
+    .imgDiv {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.leftImgAnimation {
+        text-align: center;
+      }
+
+      &.rightImgAnimation {
+        display: none;
+      }
+      
+
+      &.rightImgAnimationMobile {
+        // display: block;
+        // text-align: center;
+      }
+
+      .imageMission {
+        height: 100%;
+        object-fit: cover;
+        &.wassimProfil {
+          width: 30%;
+        }
+
+        &.design {
+          height: 90%;
+        }
+
+        &.dropship {
+          height: 90%;
+        }
+      }
+    }
+
+    .title-mission-homepage {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+}
+} 

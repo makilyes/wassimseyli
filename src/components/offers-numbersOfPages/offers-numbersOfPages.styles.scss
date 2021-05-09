@@ -1,0 +1,26 @@
+.numberOfPagesComponent {
+  display: flex;
+  align-items: center;
+
+  .counterNumberPages {
+
+    margin-left: 50px;
+
+    .fa-minus {
+      margin-right: 15px;
+    }
+
+    .fa-plus {
+      margin-left: 15px;
+    }
+
+    .counterNumber {
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+  }
+
+
+
+}

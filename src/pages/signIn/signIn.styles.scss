@@ -1,0 +1,219 @@
+.signInComponent {
+
+  display: flex;
+  margin: 80px auto 200px;
+  width: 80%;
+  max-width: 960px;
+  justify-content: space-between;
+  align-items: self-start;
+
+
+}
+
+.logoFullSignInDiv {
+  text-align: center;
+  margin-top: 100px;
+
+  .logoFullSignIn {
+    height: 80px !important;
+
+  }
+}
+
+.loginEmail {
+  width: 45%;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 70px -35px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 70px -35px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 70px -35px rgba(0,0,0,0.75);
+
+  .title-login {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .emailInput-loginPage {
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #afb4ba;
+    margin-bottom: 13px;
+    border: 1px solid #f4f4f5;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+    width: 100%;
+    outline: none;
+    &:focus {
+      border: solid #FFD629 1px;
+      background-color: rgb(250, 250, 252);
+    }
+  }
+
+  .passwordInput-div {
+    display: flex;
+    position: relative;
+    height: 50px;
+    padding: 10px 0;
+    color: #afb4ba;
+    margin-bottom: 13px;
+    border: 1px solid #f4f4f5;
+    background-color: #fdfcfc;
+    border-radius: 3px;
+
+
+
+    .passwordInput-loginPage {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding-left: 20px;
+      border: none;
+      background-color: initial;
+      font-size: 17px;
+      color: #afb4ba;
+      font-weight: 300;
+      outline: none;
+      &:focus {
+        background-color: rgb(250, 250, 252);
+        border: solid #FFD629 1px;
+      }
+    }
+
+    .forgotPasswordLink {
+      font-size: 11px;
+      color: #7f8893;
+      position: absolute;
+      align-self: center;
+      justify-self: center;
+      top: 35%;
+      right: 10px;
+    }
+  }
+
+  .btn {
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 9px 30px;
+
+  }
+
+  .loginBtn-div {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 70px;
+  }
+
+  .register {
+    font-size: 14px;
+    color: #63686e;
+
+    .registerHere {
+      color: #025AA2;
+      font-weight: 600;
+    }
+  }
+}
+
+.errorForm{
+  color:  red;
+}
+
+.verticalBar {
+  margin-top: 40px;
+  width: 5%;
+  background-color: #ffd629;
+  border: solid 1px #dddddd;
+  height: 200px;
+}
+
+.loginEmail {
+  .loginBtnSocial {
+    display: flex;
+    justify-content: space-around;
+
+    height: 195px;
+
+  }
+}
+
+.loginBtnSocial {
+
+  .facebookBtn.loginSocial {
+    display: flex;
+    color: black;
+    border: 2px solid #025AA2;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 13px;
+
+    img {
+      height: 45px;
+    }
+  }
+}
+
+.loginBtnSocial {
+
+  .googleBtn.loginSocial {
+    background-color: #4285F4;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 13px;
+
+    img {
+      height: 45px;
+    }
+  }
+
+
+}
+
+.googleBtn.registerSocial {
+  background-color: #4285F4;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  height: 60px;
+
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 768px) {
+
+  .signInComponent {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .logoFullSignInDiv {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .loginEmail {
+    margin-top: 70px;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .verticalBar {
+    margin-top: 80px;
+    width: 100%;
+    height: 3px;
+  }
+
+}

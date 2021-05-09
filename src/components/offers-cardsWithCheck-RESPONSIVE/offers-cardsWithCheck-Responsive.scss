@@ -1,0 +1,128 @@
+.cardWithCheckResponsive-component {
+  width: 100%;
+  .listing-cardWithCheck {
+    height: 425px;
+    margin-top: 20px;
+
+    .listing {
+      border: #ffd629 2px solid;
+    }
+    .listing-active {
+      background-color: #ffd629;
+    }
+    .listing-active, .listing {
+      list-style: none;
+      position: relative;
+      padding: 60px 40px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      //   justify-content: center;
+      height: 100%;
+      justify-self: center;
+      .blocImageWithTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .imgContainer {
+          min-height: 100px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .cart-item-count {
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        font-weight: 900;
+        border-radius: 50%;
+        font-size: 20px;
+        border: black 1px solid;
+        position: absolute;
+        top: -15px;
+        right: 30px;
+      }
+
+      .title-checkbox {
+        margin: 0 auto;
+        //margin-top: 20px;
+        font-weight: 900;
+        font-size: 20px;
+        display: flex;
+      }
+
+      .fa-check {
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid black;
+      }
+      .subtitle-project {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+      .price-package {
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      .detailPrice {
+
+      }
+
+    }
+
+    .listing {
+      .cart-item-count {
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        font-weight: 900;
+        border-radius: 50%;
+        font-size: 20px;
+        border: black 1px solid;
+        position: absolute;
+        top: -15px;
+        right: 30px;
+      }
+
+      .title-checkbox {
+        margin: 0 auto;
+        //margin-top: 20px;
+        font-weight: 900;
+        font-size: 20px;
+        display: flex;
+      }
+
+      .fa-check {
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid #b5b5b5;
+        color: #B5B5B5;
+      }
+
+      .subtitle-project {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+      .price-package {
+        font-size: 25px;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      .detailPrice {
+
+      }
+    }
+  }
+}
+

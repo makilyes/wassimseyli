@@ -1,0 +1,77 @@
+.coachingPage-paragraph {
+  background-color: #ffd629;
+  margin-bottom: 150px;
+
+  p {
+    font-size: 25px;
+    padding: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .bold-text {
+    font-weight: 900;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+}
+
+.coachingPage {
+  position: relative;
+  background-color: #ffd629;
+  height: 700px;
+  margin-bottom: 300px;
+
+  .coaching-textSection {
+    text-align: center;
+
+    .title {
+      padding-top: 30px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 80px;
+      font-weight: 900;
+    }
+
+    .description {
+      font-size: 30px;
+      width: 50%;
+      margin: 30px auto 70px;
+    }
+  }
+
+  .coaching-imgSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 65%;
+
+    .imgSize {
+      height: 600px;
+    }
+
+    .img1 {
+      margin-top: 100px;
+    }
+
+    .img3 {
+      margin-top: 100px;
+    }
+
+  }
+}
+
+
+.btnCTA-div {
+  margin-top: 500px;
+  text-align: center;
+  .btn {
+    padding: 30px;
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+}
+

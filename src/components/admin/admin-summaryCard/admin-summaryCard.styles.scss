@@ -1,0 +1,45 @@
+.admin-summaryCard {
+  background-color: #705DF2;
+  width: 25%;
+  color: white;
+margin-right: 20px;
+
+  & .income {
+    background-color: red;
+  }
+
+
+  h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  admin-summaryCardTitle {
+    color: white !important;
+  }
+
+  .admin-summaryCardNumber {
+    font-weight: 900;
+    font-size: 23px;
+  }
+
+  .admin-increaseDiv {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+.admin-summaryCard.income {
+    background-color: #09cf58;
+  }
+
+.admin-summaryCard.leads {
+  background-color: #cf5809;
+}
+
+.admin-summaryCard.visitors {
+  background-color: #0979cf;
+}
+

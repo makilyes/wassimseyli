@@ -1,0 +1,33 @@
+.admin-dashboard {
+  display: flex;
+
+  .admin-navbar {
+    margin-right: 50px;
+    background-color: #d4d4d4;
+
+
+  }
+
+  .admin-orders {
+
+  }
+}
+
+.summary {
+  display: flex;
+  margin: 40px auto;
+}
+
+.filter-buttons {
+  margin: 0 auto;
+  text-align: center;
+
+  button {
+    padding: 10px 40px;
+
+  }
+}
+
+.recharts-wrapper {
+  margin: 40px auto;
+}
