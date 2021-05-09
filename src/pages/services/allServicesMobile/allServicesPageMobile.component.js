@@ -9,23 +9,25 @@ function AllServicesPageMobileComponent(props) {
             <h1 id="titleOurServices">
                 Our Services
             </h1>
-            <div className="coachingCard">
-                <h2 className="coachingCardTitle">
-                    Coaching
-                </h2>
-                <img src={img1} alt=""/>
-            </div>
-            <div className="dropshippingCard">
-                <h2 className="dropshippingCardTitle">
-                    Dropshipping
-                </h2>
-                <img src={img2} alt=""/>
-            </div>
-            <div className="packaging">
-                <h2 className="packagingCardTitle">
-                    Packaging
-                </h2>
-                <img src={img1} alt=""/>
+            <div className="servicesCards">
+                <div className="coachingCard">
+                    <h2 className="coachingCardTitle">
+                        Coaching
+                    </h2>
+                    <img src={img1} alt=""/>
+                </div>
+                <div className="dropshippingCard">
+                    <h2 className="dropshippingCardTitle">
+                        Dropshipping
+                    </h2>
+                    <img src={img2} alt=""/>
+                </div>
+                <div className="packaging">
+                    <h2 className="packagingCardTitle">
+                        Packaging
+                    </h2>
+                    <img src={img1} alt=""/>
+                </div>
             </div>
         </div>
     );

@@ -6,23 +6,72 @@
   text-align: center;
 }
 
-.packaging, .dropshippingCard, .coachingCard {
-  position: relative;
-  h2 {
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: 600;
-    text-shadow: 8px 4px 6px black;
-    margin-bottom: 0;
-  }
-  img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    margin-bottom: 60px;
+.servicesCards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+
+  .packaging, .dropshippingCard, .coachingCard {
+    position: relative;
+    display: flex;
+    h2 {
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 55px;
+      font-weight: 600;
+      text-shadow: 8px 4px 6px black;
+      margin-bottom: 0;
+    }
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      margin-bottom: 60px;
+    }
   }
 
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #titleOurServices {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .servicesCards {
+    display: block;
+
+
+    .packaging, .dropshippingCard, .coachingCard {
+      position: relative;
+
+      h2 {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        text-shadow: 8px 4px 6px black;
+        margin-bottom: 0;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
