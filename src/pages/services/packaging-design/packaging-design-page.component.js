@@ -27,7 +27,6 @@ function PackagingDesignPageComponent(props) {
     ]);
 
 
-
     return (
         <div>
             <PackagingHeroComponent
@@ -36,88 +35,82 @@ function PackagingDesignPageComponent(props) {
                 img={cards[0].img}
             />
             <div className="packaging-right">
-            <Fade left>
-
-                <div className="design-description">
-                    <h1>{sections[0].title}</h1>
-                    <p>{sections[0].description}</p>
-                </div>
+                <Fade left>
+                    <div className="design-description">
+                        <h1>{sections[0].title}</h1>
+                        <p>{sections[0].description}</p>
+                    </div>
                 </Fade>
                 <Fade right>
-
-                <div className="image-container-design">
-                    <img className="image-design" src={img1} alt=""/>
-                </div>
+                    <div className="image-container-design">
+                        <img className="image-design" src={img1} alt=""/>
+                    </div>
                 </Fade>
-
             </div>
-
             <div className="packaging-left">
-            <Fade left>
-
-                <div className="image-container-design">
-                    <img className="image-design" src={img2} alt=""/>
-                </div>
+                <Fade left>
+                    <div className="image-container-design">
+                        <img className="image-design" src={img2} alt=""/>
+                    </div>
                 </Fade>
                 <Fade right>
-
-                <div className="design-description">
-                    <h1>{sections[1].title}</h1>
-                    <p>{sections[1].description}</p>
-                </div>
+                    <div className="design-description">
+                        <h1>{sections[1].title}</h1>
+                        <p>{sections[1].description}</p>
+                    </div>
                 </Fade>
-
             </div>
+
             <Flip top>
-
-            <div className="packaging-grid">
-                <div className="leftGrid">
-                    <FontAwesomeIcon icon={faEdit}/>
-                    <h3>{sections[2].title}</h3>
-                    <p>{sections[2].description}</p>
+                <div className="packaging-grid">
+                    <div className="leftGrid">
+                        <FontAwesomeIcon icon={faEdit}/>
+                        <h3>{sections[2].title}</h3>
+                        <p>{sections[2].description}</p>
+                    </div>
+                    <div className="rightGrid">
+                        <FontAwesomeIcon icon={faHeart}/>
+                        <h3>{sections[3].title}</h3>
+                        <p>{sections[3].description}</p>
+                    </div>
                 </div>
-                <div className="rightGrid">
-                    <FontAwesomeIcon icon={faHeart}/>
-                    <h3>{sections[3].title}</h3>
-                    <p>{sections[3].description}</p>
-                </div>
-            </div>
             </Flip>
 
-            <div>        
+            <div>
                 <Bounce bottom>
-
-                <div className="title-additionalServices">
-                    <h2><span className="bold-title">Our additional</span><br/> services</h2>
-                </div>
+                    <div className="title-additionalServices">
+                        <h2><span className="bold-title">Our additional</span><br/> services</h2>
+                    </div>
                 </Bounce>
                 <Zoom>
 
-                <div className="card-complementaryServices">
-                    <div className="card-complementaryService">
-                        <CameroIcon/>
-                        <h3>Organisez un shooting photo</h3>
-                        <p>Faites-nous confiance pour créer du contenu performant pour vos campagnes facebook, Instagram, snapchat et google ads.</p>
+                    <div className="card-complementaryServices">
+                        <div className="card-complementaryService">
+                            <CameroIcon/>
+                            <h3>Organisez un shooting photo</h3>
+                            <p>Faites-nous confiance pour créer du contenu performant pour vos campagnes facebook,
+                                Instagram, snapchat et google ads.</p>
+                        </div>
+                        <div className="card-complementaryService1">
+                            <GlobeIcon/>
+                            <h3>Créez votre société OFFSHORE</h3>
+                            <p>Profitez d’un taux d'imposition à 0% en toute légalité avec notre solution clé en main
+                                incluant l’ouverture d’un compte bancaire.</p>
+                        </div>
+                        <div className="card-complementaryService2">
+                            <LabelIcon/>
+                            <h3>Brandez votre store</h3>
+                            <p>Investissez dans une image de marque professionnelle afin de faciliter les partenariats
+                                avec les influenceurs, développer un avantage concurrentiel et fidéliser vos
+                                clients.</p>
+                        </div>
+                        <div className="card-complementaryService3">
+                            <CourseIcon/>
+                            <h3>Cours et Consulting</h3>
+                            <p>Que vous souhaitez vous former, ou tout simplement avoir un coach, nous avons une
+                                solution pour vous</p>
+                        </div>
                     </div>
-
-                    <div className="card-complementaryService1">
-                        <GlobeIcon/>
-                        <h3>Créez votre société OFFSHORE</h3>
-                        <p>Profitez d’un taux d'imposition à 0% en toute légalité avec notre solution clé en main incluant l’ouverture d’un compte bancaire.</p>
-                    </div>
-
-                    <div className="card-complementaryService2">
-                        <LabelIcon/>
-                        <h3>Brandez votre store</h3>
-                        <p>Investissez dans une image de marque professionnelle afin de faciliter les partenariats avec les influenceurs, développer un avantage concurrentiel et fidéliser vos clients.</p>
-                    </div>
-
-                    <div className="card-complementaryService3">
-                        <CourseIcon/>
-                        <h3>Cours et Consulting</h3>
-                        <p>Que vous souhaitez vous former, ou tout simplement avoir un coach, nous avons une solution pour vous</p>
-                    </div>
-                </div>
                 </Zoom>
             </div>
         </div>

@@ -25,58 +25,97 @@ function DropServicesPageComponent(props) {
     return (
         <div>
             <PackagingHeroComponent
-            title={card[1].title}
-            description={card[1].description}
-            img={card[1].img}
+                title={card[1].title}
+                description={card[1].description}
+                img={card[1].img}
             />
             <div>
                 <div className="dropServices-cards">
                     <div className="column-1">
-                    <Fade bottom>
-                        <DropServicesCardsComponent
-                            titleColor='color0 title-dropshipServices'
-                            cardsNumber={data[0].cardsNumber}
-                            title={data[0].title}
-                            description={data[0].description}
-                            img={phoneCall}
-                        />
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color0 title-dropshipServices'
+                                cardsNumber={data[0].cardsNumber}
+                                title={data[0].title}
+                                description={data[0].description}
+                                img={phoneCall}
+                            />
                         </Fade>
                         <Fade bottom>
-                        <DropServicesCardsComponent
-                            titleColor='color1 title-dropshipServices'
-                            cardsNumber={data[2].cardsNumber}
-                            title={data[2].title}
-                            description={data[2].description}
-                            img={warehouse}
-                        />
-                                                </Fade>
-
+                            <DropServicesCardsComponent
+                                titleColor='color1 title-dropshipServices'
+                                cardsNumber={data[2].cardsNumber}
+                                title={data[2].title}
+                                description={data[2].description}
+                                img={warehouse}
+                            />
+                        </Fade>
                     </div>
                     <div className="column-2">
-                    <Fade bottom> 
-                        <DropServicesCardsComponent
-                            titleColor='color2 title-dropshipServices'
-                            cardsNumber={data[1].cardsNumber}
-                            title={data[1].title}
-                            description={data[1].description}
-                            img={priceDown}
-                        />
-                                                </Fade>
-                                                <Fade bottom> 
-
-                        <DropServicesCardsComponent
-                            titleColor='color3 title-dropshipServices'
-                            cardsNumber={data[3].cardsNumber}
-                            title={data[3].title}
-                            description={data[3].description}
-                            img={bestSeller}
-                        />
-                                                                        </Fade>
-
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color2 title-dropshipServices'
+                                cardsNumber={data[1].cardsNumber}
+                                title={data[1].title}
+                                description={data[1].description}
+                                img={priceDown}
+                            />
+                        </Fade>
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color3 title-dropshipServices'
+                                cardsNumber={data[3].cardsNumber}
+                                title={data[3].title}
+                                description={data[3].description}
+                                img={bestSeller}
+                            />
+                        </Fade>
+                    </div>
+                </div>
+                <div className="dropServices-cards-mobile">
+                    <div className="column-1">
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color0 title-dropshipServices'
+                                cardsNumber={data[0].cardsNumber}
+                                title={data[0].title}
+                                description={data[0].description}
+                                img={phoneCall}
+                            />
+                        </Fade>
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color1 title-dropshipServices'
+                                cardsNumber={data[2].cardsNumber}
+                                title={data[2].title}
+                                description={data[2].description}
+                                img={warehouse}
+                            />
+                        </Fade>
+                    </div>
+                    <div className="column-2">
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color2 title-dropshipServices'
+                                cardsNumber={data[1].cardsNumber}
+                                title={data[1].title}
+                                description={data[1].description}
+                                img={priceDown}
+                            />
+                        </Fade>
+                        <Fade bottom>
+                            <DropServicesCardsComponent
+                                titleColor='color3 title-dropshipServices'
+                                cardsNumber={data[3].cardsNumber}
+                                title={data[3].title}
+                                description={data[3].description}
+                                img={bestSeller}
+                            />
+                        </Fade>
                     </div>
                 </div>
                 <div className="titleHowItWorks">
-                    <h2>How it works ?!</h2>
+                    <h2 className="howItWorksTitle">How it works ?!</h2>
                 </div>
                 <div className='imgDiv-DropServices-section2'>
                     <img src={logisticImage} alt="" className='img-DropServices-section2'/>

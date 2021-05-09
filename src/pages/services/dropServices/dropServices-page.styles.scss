@@ -50,3 +50,34 @@
   font-weight: 600;
   text-align: center;
 }
+
+.dropServices-cards-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .titleHowItWorks {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 150px;
+    .howItWorksTitle {
+      font-weight: 900;
+      color: #FFD629;
+    }
+  }
+
+  .imgDiv-DropServices-section2
+  .img-DropServices-section2 {
+    height: 230px;
+  }
+
+  .dropServices-section3 {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    background-color: #150C21;
+    color: white;
+  }
+}

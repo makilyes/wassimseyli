@@ -1,6 +1,7 @@
 .dropServicesCard {
   position: relative;
-  margin-bottom: 300px;
+  margin-top: 200px;
+  margin-bottom: 200px;
   background-color: #ffffff;
   padding: 45px;
   -webkit-box-shadow: 8px 4px 75px -17px rgba(0, 0, 0, 0.41);
@@ -11,8 +12,8 @@
   img {
     width: 150px;
     position: absolute;
-    top: -50px;
-    right: -50px;
+    top: -100px;
+    right: 15px;
   }
 
   .small-number {

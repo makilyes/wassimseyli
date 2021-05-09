@@ -2,7 +2,7 @@ import React from 'react';
 import './ourStoryPage.styles.scss'
 import handWithMobileImg from "../../assests/hand-withMobile.png";
 import {useSelector} from "react-redux";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 import CustomButtonComponent from "../../components/custom-button/custom-button.component";
 import wassimThePain from "../../assests/wassim-thePain.jpg";
 import wassimearlyLife from "../../assests/wassim-earlyLife.jpg";
@@ -39,79 +39,70 @@ function OurStoryPageComponent(props) {
             </div>
             <div className='ourStory-section1'>
                 <div className="earlyLife-section">
-                <Fade left>
-                    <div className="ourStoryBlock blockLeft">
-                        <h1>
-                            {blocks[0].title}
-                        </h1>
-                        <p>
-                            {blocks[0].description}
-                        </p>
-                    </div>
+                    <Fade left>
+                        <div className="ourStoryBlock blockLeft">
+                            <h1>
+                                {blocks[0].title}
+                            </h1>
+                            <p>
+                                {blocks[0].description}
+                            </p>
+                        </div>
                     </Fade>
                     <Fade right>
-                    <div className="image">
-                        <img className='wassim-earlyLife-img' src={wassimearlyLife} />
-                    </div>
+                        <div className="image">
+                            <img className='wassim-earlyLife-img' src={wassimearlyLife}/>
+                        </div>
                     </Fade>
                 </div>
                 <Flip right>
-
-                <blockquote className='quotes'>
-                    " From 2016 to 2018, dropshipping was quite simple. It was "the golden era" as some would say. The
-                    competition was still fairly low and the Facebook rules were much more flexible... "
-                </blockquote>
+                    <blockquote className='quotes'>
+                        " From 2016 to 2018, dropshipping was quite simple. It was "the golden era" as some would say.
+                        The
+                        competition was still fairly low and the Facebook rules were much more flexible... "
+                    </blockquote>
                 </Flip>
-
                 <div className="thePain-section">
-                <Fade left>
-
-                    <div className="image">
-                        <img className='wassim-pain-img' src={wassimThePain}/>
-                    </div>
+                    <Fade left>
+                        <div className="image">
+                            <img className='wassim-pain-img' src={wassimThePain}/>
+                        </div>
                     </Fade>
                     <Fade right>
-
-                    <div className="ourStoryBlock blockRight">
-                        <h1>
-                            {blocks[1].title}
-                        </h1>
-                        <p>
-                            {blocks[1].description}
-                        </p>
-                    </div>
+                        <div className="ourStoryBlock blockRight">
+                            <h1>
+                                {blocks[1].title}
+                            </h1>
+                            <p>
+                                {blocks[1].description}
+                            </p>
+                        </div>
                     </Fade>
-
                 </div>
                 <Flip left>
-
-                <blockquote className='quotes'>
-                    " Was dropshipping dead?
-                    Definitely not! You had to find new ways to sell, to differentiate yourself and to be ahead of the
-                    competition. "
-                </blockquote>
+                    <blockquote className='quotes'>
+                        " Was dropshipping dead?
+                        Definitely not! You had to find new ways to sell, to differentiate yourself and to be ahead of
+                        the
+                        competition. "
+                    </blockquote>
                 </Flip>
-
-
                 <div className="theLaunch-section">
-                <Fade left>
-
-                    <div className="ourStoryBlock blockLeft">
-                        <h1>
-                            {blocks[2].title}
-                        </h1>
-                        <p>
-                            {blocks[2].description}
-                        </p>
-                    </div>
+                    <Fade left>
+                        <div className="ourStoryBlock blockLeft">
+                            <h1>
+                                {blocks[2].title}
+                            </h1>
+                            <p>
+                                {blocks[2].description}
+                            </p>
+                        </div>
                     </Fade>
                     <Fade right>
-
-                    <div className="image">
-                        <img className='wassim-launch-img' src={wassimeTheLaunch}/>
-                    </div>
+                        <div className="image">
+                            <img className='wassim-launch-img' src={wassimeTheLaunch}/>
+                        </div>
                     </Fade>
-
                 </div>
             </div>
 

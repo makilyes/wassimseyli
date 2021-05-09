@@ -3,7 +3,6 @@
   margin: 0 auto;
 
   .logoFullSignInDiv {
-
     .logoFullSignIn {
       height: 80px !important;
     }
@@ -22,8 +21,6 @@
   margin-top: 50px;
   margin-bottom: 40px;
 }
-
-
 
 .registerForm {
   display: flex;
@@ -76,7 +73,6 @@
   }
 }
 
-
 .RegisterGoogleComponent {
   text-align: center;
   display: flex;
@@ -109,8 +105,12 @@
 
 }
 
-
 p {
   margin-left: 10px
 }
 
+@media screen and (max-width: 768px) {
+ .RegisterComponent {
+   width: 100% !important;
+ }
+}

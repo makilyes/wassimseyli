@@ -19,3 +19,30 @@
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .hero-card {
+    background-color: #ffffff;
+    width: 317px;
+    height: 279px;
+    padding: 38px 30px;
+    border-top: solid 8px #ffd629;
+    border-radius: 15px;
+
+
+    .btn {
+      padding: 15px 20px;
+      margin-top: 15px;
+    }
+    p {
+      margin-top: 15px;
+    }
+    h1 {
+      margin-top: 25px;
+    }
+
+  }
+}
+
+

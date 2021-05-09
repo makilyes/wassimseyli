@@ -1,5 +1,6 @@
 .design-description {
-  width : 40%;
+  width: 40%;
+
   h1 {
     font-size: 2.5rem;
     font-weight: 900;
@@ -15,6 +16,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 4px 4px 20px 12px #d1d1d1;
+
   .image-design {
     height: 70%;
     object-fit: fill;
@@ -47,6 +49,7 @@
   margin: 0 auto 150px;
   text-align: center;
   background-color: #ffd629;
+
   h3 {
     margin-bottom: 30px;
     margin-top: 15px;
@@ -72,9 +75,7 @@
 }
 
 .card-complementaryServices {
-  //background-color: #ffd629;
   position: relative;
-  //background-color: black;
   width: 1200px;
   height: 1100px;
   margin: 0 auto;
@@ -88,8 +89,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 30px;
-    //background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9));
-    //height: 100%;
+
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
@@ -107,7 +107,6 @@
   p {
     color: white;
   }
-
 }
 
 
@@ -129,12 +128,6 @@
     transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   }
 
-  .card-complementaryService {
-    //background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9));
-    //height: 100%;
-
-  }
-
   h3 {
     color: #ffd629;
     font-weight: 700;
@@ -145,7 +138,6 @@
     color: white;
   }
 }
-
 
 .card-complementaryService2 {
   background-color: red;
@@ -166,12 +158,6 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  }
-
-
-  .card-complementaryService {
-
-    //height: 100%;
   }
 
   h3 {
@@ -205,13 +191,6 @@
     transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
   }
 
-
-  .card-complementaryService {
-
-    //background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.9));
-    //height: 100%;
-  }
-
   h3 {
     color: #ffd629;
     font-weight: 700;
@@ -240,3 +219,53 @@
   margin: 100px auto;
 }
 
+
+@media screen and (max-width: 768px) {
+  .packaging-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    .design-description {
+      text-align: center;
+      margin: 0 auto 60px;
+      width: 100%;
+    }
+
+  }
+  .packaging-left {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+
+    .design-description {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 60px;
+    }
+  }
+  .packaging-grid {
+    display: block;
+    width: 100%;
+  }
+  .card-complementaryServices {
+    width: 100%;
+    height: 1800px;
+    margin: 0 auto;
+    .card-complementaryService, .card-complementaryService1, .card-complementaryService2, .card-complementaryService3 {
+      display: block;
+      width: 100%;
+      position: static;
+      height: 470px;
+      &:hover {
+        cursor: none;
+        transform: none;
+        transition: none;
+      }
+
+    }
+  }
+}

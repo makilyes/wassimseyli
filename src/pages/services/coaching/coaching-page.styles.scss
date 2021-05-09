@@ -64,7 +64,6 @@
   }
 }
 
-
 .btnCTA-div {
   margin-top: 500px;
   text-align: center;
@@ -75,3 +74,46 @@
   }
 }
 
+.dropServices-cards-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .dropServices-cards {
+    display: none;
+  }
+  .dropServices-cards-mobile {
+    display: block;
+  }
+  .coachingPage {
+    height: 100%;
+    margin-bottom: 0;
+    .coaching-imgSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 65%;
+
+      .imgSize {
+        height: 300px;
+      }
+      .img1 {
+        margin-top: 100px;
+      }
+      .img3 {
+        margin-top: 100px;
+      }
+
+    }
+  }
+
+  .btnCTA-div {
+    margin-top: 100px;
+    text-align: center;
+    .btn {
+      padding: 30px;
+      font-size: 25px;
+      margin-bottom: 100px;
+    }
+  }
+}

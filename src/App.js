@@ -20,6 +20,7 @@ import ForgotPasswordComponent from "./pages/forgotPassword/forgotPassword.compo
 import UserDashboard from "./pages/userDashboard/userDashboard";
 import AdminLayoutComponent from "./components/adminLayout/adminLayout.component";
 import Logout from './components/logout/logout';
+import AllServicesPageMobileComponent from "./pages/services/allServicesMobile/allServicesPageMobile.component";
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
                 <Route exact path='/services/branding' component={PackagingDesignPageComponent}/>
                 <Route exact path='/services/dropshipping' component={DropServicesPageComponent}/>
                 <Route exact path='/services/coaching' component={CoachingPageComponent}/>
+                <Route exact path='/services/all' component={AllServicesPageMobileComponent}/>
                 <Route exact path='/user' component={UserDashboard}/>
                 <Route exact path='/admin' component={AdminLayoutComponent}/>
             </Switch>

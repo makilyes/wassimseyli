@@ -1,42 +1,33 @@
 .ourStoryHero-component {
-  background-color: #E6E9EF;
   display: flex;
   justify-content: space-around;
   padding-top: 15px;
-
+  background-color: #e6e9ef;
   .ourStoryHero-texts {
     flex-basis: 55%;
     align-self: center;
     padding-left: 100px;
-
     h1 {
       font-size: 90px;
       margin-bottom: 30px;
     }
-
     p {
       width: 90%;
       margin-top: 15px;
       font-size: 27px;
     }
   }
-
   .ourStoryHero-img {
-
+    flex-basis: 40%;
     .imgHandWithMobile {
       height: 900px;
     }
   }
-
-
-
 }
 
 .ourStory-section1 {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-
-
   .earlyLife-section,
   .thePain-section,
   .theLaunch-section {
@@ -44,53 +35,40 @@
     display: flex;
     justify-content: space-between;
   }
-
   .ourStoryBlock.blockLeft,
   .ourStoryBlock.blockRight {
-    flex-basis: 57%;
+    flex-basis: 55%; // width of the flex element "text block"
   }
-
   .ourStoryBlock.blockLeft h1,
   .ourStoryBlock.blockRight h1 {
     font-weight: 900;
     font-size: 2.5em;
     text-align: center;
   }
-
   .ourStoryBlock.blockLeft p,
   .ourStoryBlock.blockRight p {
     line-height: 2em;
     margin: 0;
     text-align: justify;
   }
-
   .earlyLife-section .image,
   .thePain-section .image,
   .theLaunch-section .image {
-    flex-basis: 37%;
+    flex-basis: 41%; // width of the flex element "image"
     align-self: center;
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    .wassim-pain-img {
+    .wassim-pain-img, .wassim-earlyLife-img, .wassim-launch-img {
       height: 80%;
+      width: 100%;
       object-fit: cover;
-      
-    }
-    .wassim-earlyLife-img {
-      height: 80%;
-      object-fit: fill;
-    }
-    .wassim-launch-img {
-      height: 100%;
-      object-fit: fill;
+      object-position: center;
     }
   }
-
-
   .quotes {
-    margin-top: 200px;
+    margin-top: 110px;
     font-size: 30px;
     font-weight: 600;
   }
@@ -99,7 +77,6 @@
 .theCTA-section {
   background-color: #ffd629;
   text-align: center;
-
   h1 {
     font-size: 45px;
     font-weight: 900;
@@ -107,14 +84,12 @@
     padding-top: 50px;
     padding-bottom: 30px;
   }
-
   p {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 0;
     padding-bottom: 45px;
   }
-
   .btn {
     padding: 25px;
     background-color: black;
@@ -126,48 +101,37 @@
 
 @media screen and (max-width: 1200px) {
   .ourStoryHero-component {
- 
     .ourStoryHero-texts {
-
       h1 {
         font-size: 90px;
         margin-bottom: 30px;
         line-height: 7rem;
       }
-  
       p {
         width: 90%;
         margin-top: 15px;
         font-size: 27px;
       }
     }
-  
     .ourStoryHero-img {
-
       .imgHandWithMobile {
         height: 700px;
       }
     }
-  
   }
-
   .ourStory-section1 {
     width: 90%;
     margin: 0 auto;
   }
-
   .theCTA-section {
-
     h1 {
       padding-top: 80px;
       padding-bottom: 15px;
     }
-  
     p {
       margin-bottom: 0;
       padding-bottom: 25px;
     }
-  
     .btn {
       padding: 25px;
       font-size: 24px;
@@ -180,18 +144,15 @@
   .ourStoryHero-component {
     background-color: #E6E9EF;
     display: block;
-
     .ourStoryHero-texts {
       margin: 0 auto;
       padding: 15px 0 0;
       width: 85%;
-
       h1 {
         font-size: 45px;
         margin-bottom: 30px;
         font-weight: 700;
       }
-
       p {
         width: 100%;
         margin-top: 15px;
@@ -200,45 +161,37 @@
     }
 
     .ourStoryHero-img {
-
       .imgHandWithMobile {
         height: 400px;
         margin-top: 30px;
       }
     }
-
   }
 
   .ourStory-section1 {
     width: 90%;
     margin: 0 auto;
-
     .earlyLife-section,
     .thePain-section,
     .theLaunch-section {
       margin-top: 100px;
       display: block;
     }
-
     .earlyLife-section .image,
     .thePain-section .image,
     .theLaunch-section .image {
       margin-bottom: 80px;
       margin-top: 40px;
     }
-
     .quotes {
       text-align: center;
     }
   }
-
   .theCTA-section {
     padding: 0 20px;
-
     h1 {
       font-size: 38px;
     }
-
     .btn {
       font-size: 20px;
       margin-top: 15px;
