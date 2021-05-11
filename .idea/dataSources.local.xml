@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-211.7142.45">
-    <data-source name="demo/Hibernate" uuid="02a74df5-df14-4949-bbb1-a0c40b88692d">
-      <database-info product="PostgreSQL" version="13.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.2" exact-driver-version="42.2">
+    <data-source name="aws" uuid="a757e123-7994-48ee-a789-5392c0ff591a">
+      <database-info product="PostgreSQL" version="12.5" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="12.5" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <user-name>postgres</user-name>
+      <secret-storage>master_key</secret-storage>
+      <user-name>imakria</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node kind="database" qname="wassimseylidb">
+            <node kind="schema" qname="public" />
           </node>
         </introspection-scope>
       </schema-mapping>
-    </data-source>
-    <data-source name="postgres@localhost" uuid="05509910-f494-4fee-9346-e44e22f69684">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
-    </data-source>
-    <data-source name="postgres@aa18uo9l08z2085.cwlyjihpz5am.eu-west-3.rds.amazonaws.com" uuid="428fa7b7-993a-48e5-b6e0-de98af181408">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
     </data-source>
   </component>
 </project>

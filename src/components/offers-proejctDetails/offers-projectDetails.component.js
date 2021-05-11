@@ -64,7 +64,7 @@ function OffersProjectDetailsComponent(props) {
   return (
     <div className="projectDetail-component">
       <OffersTitleCardComponent
-        titleNumber="6"
+        titleNumber="End"
         titleSection="Project Details"
       />
       <input

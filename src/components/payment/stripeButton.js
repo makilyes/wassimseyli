@@ -3,10 +3,13 @@ import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
+import {useHistory} from "react-router-dom";
 
 const StripeButton = ({ price, updateCart }) => {
   const publishableKey = "pk_test_uDA6moUBkTqeaDEOK5TdZp7700kyuwEHhe";
   const stripePrice = price * 100;
+
+  let history = useHistory();
 
   const user = useSelector((state) => state.userReducer?.user);
 
@@ -23,6 +26,7 @@ const StripeButton = ({ price, updateCart }) => {
       toast("Payment Successful", {
         type: "info",
       });
+      history.push("/user");
     } else if (response.status === 500) {
       toast("Server Error, payment not successful", {
         type: "error",

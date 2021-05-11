@@ -14,20 +14,24 @@ import DropServicesPageComponent from "./pages/services/dropServices/dropService
 import CoachingPageComponent from "./pages/services/coaching/coaching-page.component";
 import RegisterComponent from "./pages/register/register.component";
 import Navbar from "./components/navbar/Navbar";
-import AdminDashboardComponent from "./pages/DELETE - adminDashboard/admin-dashboard.component";
 import ResetPasswordComponent from "./pages/resetPassword/resetPassword.component";
 import ForgotPasswordComponent from "./pages/forgotPassword/forgotPassword.component";
 import UserDashboard from "./pages/userDashboard/userDashboard";
 import AdminLayoutComponent from "./components/adminLayout/adminLayout.component";
 import Logout from './components/logout/logout';
 import AllServicesPageMobileComponent from "./pages/services/allServicesMobile/allServicesPageMobile.component";
-
+import ScrollToTop from "./components/scrollUp/scrollUp.component";
+import React from "react";
+import CheckoutForm from './pages/checkoutFlow/yourCart'
+import Cart from "./pages/checkoutFlow/cart";
+import PersonnalInformation from "./pages/checkoutFlow/personnalInformation";
+import PaymentMethod from "./pages/checkoutFlow/paymentMethod";
 function App() {
 
     
     return (
         <div className="App">
-
+            <ScrollToTop />
             <Navbar/>
             <Switch>
                 <Route exact path='/' component={HomepageComponent}/>
@@ -46,6 +50,10 @@ function App() {
                 <Route exact path='/services/all' component={AllServicesPageMobileComponent}/>
                 <Route exact path='/user' component={UserDashboard}/>
                 <Route exact path='/admin' component={AdminLayoutComponent}/>
+                <Route exact path='/your-cart' component={CheckoutForm}/>
+                <Route exact path='/cart' component={Cart}/>
+                <Route exact path='/personal-information' component={PersonnalInformation}/>
+                <Route exact path='/payment' component={PaymentMethod}/>
             </Switch>
             <FooterComponent/>
 

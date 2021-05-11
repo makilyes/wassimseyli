@@ -1,9 +1,12 @@
 .OffersWoocommerceComponent {
-;
-  font-size: 20px;
+
+  i {
+    font-size: 14px;
+  }
 
   .wooCommerceLabel {
     margin-left: 8px;
+    font-size: 20px;
   }
 
   .inputCheckbox {
@@ -14,5 +17,6 @@
   .priceWoocommerce {
     font-weight: 900;
     margin-left: 15px;
+    font-size: 20px;
   }
 }

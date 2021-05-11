@@ -6,13 +6,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {HashRouter} from "react-router-dom";
+import ScrollToTop from "./components/scrollUp/scrollUp.component";
+import {loadStripe} from "@stripe/stripe-js";
+import {Elements} from '@stripe/react-stripe-js'
+
+const stripePromise = loadStripe('pk_test_uDA6moUBkTqeaDEOK5TdZp7700kyuwEHhe');
 
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
             <HashRouter>
-                <App/>
+                <ScrollToTop/>
+                <Elements stripe={stripePromise}>
+                    <App/>
+                </Elements>
             </HashRouter>
         </Provider>
     </React.StrictMode>,

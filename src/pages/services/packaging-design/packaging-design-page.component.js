@@ -85,26 +85,34 @@ function PackagingDesignPageComponent(props) {
                 <Zoom>
 
                     <div className="card-complementaryServices">
-                        <div className="card-complementaryService">
+                        <div className="card-complementaryService"
+                             onClick={() => props.history.push('/offers')}
+                        >
                             <CameroIcon/>
                             <h3>Organisez un shooting photo</h3>
                             <p>Faites-nous confiance pour créer du contenu performant pour vos campagnes facebook,
                                 Instagram, snapchat et google ads.</p>
                         </div>
-                        <div className="card-complementaryService1">
+                        <div className="card-complementaryService1"
+                             onClick={() => props.history.push('/offers')}
+                        >
                             <GlobeIcon/>
                             <h3>Créez votre société OFFSHORE</h3>
                             <p>Profitez d’un taux d'imposition à 0% en toute légalité avec notre solution clé en main
                                 incluant l’ouverture d’un compte bancaire.</p>
                         </div>
-                        <div className="card-complementaryService2">
+                        <div className="card-complementaryService2"
+                             onClick={() => props.history.push('/offers')}
+                        >
                             <LabelIcon/>
                             <h3>Brandez votre store</h3>
                             <p>Investissez dans une image de marque professionnelle afin de faciliter les partenariats
                                 avec les influenceurs, développer un avantage concurrentiel et fidéliser vos
                                 clients.</p>
                         </div>
-                        <div className="card-complementaryService3">
+                        <div className="card-complementaryService3"
+                             onClick={() => props.history.push('/offers')}
+                        >
                             <CourseIcon/>
                             <h3>Cours et Consulting</h3>
                             <p>Que vous souhaitez vous former, ou tout simplement avoir un coach, nous avons une

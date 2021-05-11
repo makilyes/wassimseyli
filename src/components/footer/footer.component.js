@@ -15,22 +15,22 @@ function FooterComponent(props) {
                 <Logo className='logo'/>
             </Link>
             <div className="options">
-                <Link className="option" to-='/'>
+                <Link className="option" to='/'>
                     Home
                 </Link>
-                <Link className="option" to-='/services'>
+                <Link className="option" to='/services/all'>
                     Services
                 </Link>
-                <Link className="option" to-='/our-story'>
+                <Link className="option" to='/our-story'>
                     Our Story
                 </Link>
-                <Link className="option" to-='/offers'>
+                <Link className="option" to='/offers'>
                     Offers
                 </Link>
-                <Link className="option" to-='/contact-us'>
+                <Link className="option" to='/contact-us'>
                     Contact Us
                 </Link>
-                <Link className="option" to-='/sign-in'>
+                <Link className="option" to='/sign-in'>
                     Sign-in
                 </Link>
             </div>

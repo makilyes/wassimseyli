@@ -150,7 +150,8 @@ function OffersComponent(props) {
     }
 
     useEffect(()=>{	
-    },[cartSent,setCartSent])	
+    },[cartSent,setCartSent])
+
     const onChange = (x) => {	
         console.log(x)	
         if (x == 0) {	
